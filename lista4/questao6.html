@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - Lista 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+	<!--- MENU --->
+	<div class="navbar-wrapper">
+		<div class="container">
+
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+			                <li><a href="index.html">Home</a></li>
+							<li><a href="questao2.html">Questão 2</a></li>
+							<li><a href="questao3.html">Questão 3</a></li>
+							<li><a href="questao4.html">Questão 4</a></li>
+							<li><a href="questao5.html">Questão 5</a></li>
+							<li class="active"><a href="questao6.html">Questão 6</a></li>
+			            </ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">
+				    <h5 class="card-title">Notícia 1</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">URGENTE!</h6>
+				    <p class="card-text">Urgente, clique e leia!</p>
+				    <button type="button" class="btn btn-info" id="extend-info">LER MAIS!!!</button>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">
+				    <h5 class="card-title">Notícia 2</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">URGENTE!</h6>
+				    <p class="card-text">Agora é sério!</p>
+				    <button type="button" class="btn btn-info" id="extend-info">LER MAIS!!!</button>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">
+				    <h5 class="card-title">Notícia 3</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">URGENTE!</h6>
+				    <p class="card-text">Não é brincadeira!</p>
+				    <button type="button" class="btn btn-info" id="extend-info">LER MAIS!!!</button>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div id="button-place">
+			<button type="button" class="btn btn-warning" id="mostranoticia">Mais notícias</button>
+			<div id="noticia">
+				<div class="col-sm-3" id="hidden">
+					<div class="card" style="width: 18rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">VERDADE</h5>
+					    <h6 class="card-subtitle mb-2 text-muted">A VERDADE ESTÁ AQUI!</h6>
+					    <p class="card-text">Parabéns, você viu a verdade!</p>
+					    <button type="button" class="btn btn-info" id="desver">DESVER</button>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function (e) {
+	        $("#noticia").hide();
+
+	        $("#mostranoticia").click(function (e) {
+	            $("#noticia").toggle();
+	        });
+
+	        $("#desver").click(function (e) {
+	        	$("#noticia").hide();
+	        });
+	    });
+	</script>
+
+</body>
+</html>

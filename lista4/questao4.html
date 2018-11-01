@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista 4 - Questão 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<!--- MENU --->
+	<div class="navbar-wrapper">
+		<div class="container">
+
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+			                <li><a href="index.html">Home</a></li>
+							<li><a href="questao2.html">Questão 2</a></li>
+							<li><a href="questao3.html">Questão 3</a></li>
+							<li class="active"><a href="questao4.html">Questão 4</a></li>
+							<li><a href="questao5.html">Questão 5</a></li>
+							<li><a href="questao6.html">Questão 6</a></li>
+			            </ul>
+					</div>
+				</div>
+			</nav>
+
+			<form>
+			  <div class="form-group">
+			    <label for="formGroupExampleInput">Peso</label>
+			    <input type="text" onkeyup="calculaIMC()" class="form-control" id="peso" placeholder="Peso em Kg">
+			  </div>
+			  <div class="form-group">
+			    <label for="formGroupExampleInput2">Altura</label>
+			    <input type="text" onkeyup="calculaIMC()" class="form-control" id="altura" placeholder="Altura em M">
+			  </div>
+			  <div class="form-group">
+			    <label for="formGroupExampleInput3">IMC</label>
+			    <input type="text" onkeyup="calculaIMC()" class="form-control" id="total" readonly>
+			  </div>
+			</form>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

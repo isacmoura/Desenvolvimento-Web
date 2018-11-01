@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - Lista 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		#texto {
+			position: absolute;
+		}
+	</style>
+
+</head>
+<body>
+
+	<!--- MENU --->
+	<div class="navbar-wrapper">
+		<div class="container">
+
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+			                <li><a href="index.html">Home</a></li>
+							<li><a href="questao2.html">Questão 2</a></li>
+							<li><a href="questao3.html">Questão 3</a></li>
+							<li><a href="questao4.html">Questão 4</a></li>
+							<li class="active"><a href="questao5.html">Questão 5</a></li>
+							<li><a href="questao6.html">Questão 6</a></li>
+			            </ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<div class="row">
+		<div id="texto">texto</div>
+	</div>
+	
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).bind('mousemove', function(e){
+		    $('#texto').css({
+		        left: e.pageX + 5,
+		        top: e.pageY - 20
+		    });
+		});
+	</script>
+</body>
+</html>
