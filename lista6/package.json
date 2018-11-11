@@ -1,0 +1,17 @@
+{
+  "name": "contatos",
+  "version": "1.0.0",
+  "description": "Dados de contatos",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "contatos"
+  ],
+  "author": "Isac Moura",
+  "license": "ISC"
+}
